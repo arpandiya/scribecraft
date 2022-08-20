@@ -1,0 +1,435 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Kaushan Script', cursive;
+    
+}
+
+body {
+    background-color: hsla(210, 20%, 50%, 0.2);
+}
+
+nav {
+    display: grid;
+    grid-template-columns: auto 50%;
+    justify-content: space-between;
+    border-bottom: 2px solid hsla(210, 20%, 50%, 1);
+    box-shadow: 1px 2px 2px rgb(220, 218, 218);
+    height: 150px;
+    width: 100%;
+    background-color: hsla(210, 60%, 50%, 0.011);
+    
+    
+}
+nav > .logo {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: hsla(210, 60%, 50%, 0.1);
+    height: 150px;
+    padding-left: 20px;
+    margin-left: 20px;
+    border-radius: 0px 20px 20px 0px;
+}
+.nav__links {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;  
+    margin-right: 50px; 
+        
+}
+
+@media screen and (max-width: 630px) {
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    
+
+    .nav__links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 150px;
+        left: 50%;
+    }
+
+
+
+    nav > .logo > img {
+        width: 110px;
+        height: 70px;
+    }
+
+    nav > .bar {
+        display: flex;
+        margin-right: 45px;
+        cursor: pointer;
+    }
+
+    nav > .bar > h1 {
+        font-family: sans-serif;
+        transform: rotate(90deg);
+    }
+
+
+
+}
+
+.nav__links > a {
+    text-decoration: none;
+    color: hsla(210, 40%, 90%, 1);
+}
+
+.nav__links >a > .nav__link  {
+    list-style: none;    
+    width: 160px;
+    height: 45px;
+    text-align: center; 
+    background-color: hsl(210, 96%, 18%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    cursor: pointer;
+    
+}
+
+.nav__links > a > .nav__link{
+    text-decoration: none;    
+    font-family: sans-serif;
+    font-size: 20px;
+    
+}
+
+.nav__links > a > .nav__link:hover{
+    text-transform: uppercase;
+    background-color: hsla(210, 80%, 20%, 0.9);
+    transition: all 0.018s ease-in-out;
+    
+}
+
+
+
+.nav__links > a:visited {
+    color: hsla(210, 20%, 50%, 1) !important;
+}
+
+
+/* home */
+
+#home {
+    overflow-x: hidden;
+    margin-top: 25px;
+}
+.home__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;  
+    width: 100%;
+    height: 100vh;
+    background-color: hsla(210, 60%, 50%, 0.021);
+        
+}
+
+.bar {
+    display: none;
+}
+
+@media screen and (max-width: 630px) {
+    .home__container {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+       
+    }
+
+    .home__left {
+        min-width: 100vw;
+        padding: 10px 0px;
+    }
+
+    .home__left > img {
+        min-width: 300px;
+    }
+
+    .home__right {
+        min-width: 100vw;
+        padding: 5px;
+    }
+}
+
+.home__container > img {
+    width: 100%;
+    height: 100%;
+    height: inherit;
+    overflow: hidden;
+    position: absolute;
+    opacity: 0.4;
+    z-index: -1000;
+}
+
+.home__left {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;    
+    width: 50vw;
+    background-color: hsla(210, 60%, 60%, 0.3);
+    
+}
+
+.home__left > img {
+    width: 40vw;
+    height: 350px;
+    border-radius: 20px;
+    opacity: 0.85;
+}
+
+.home__right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40vw;
+   
+}
+
+.home__right > h3 {
+    font-family: 'Kaushan Script', cursive;
+    font-size: 4em;
+    color: hsla(209, 54%, 11%, 0.8);
+    text-shadow: 2px 1px 2px white;
+    text-align: center;}
+
+.home__right > h3> span {
+    color: hsla(210, 65%, 38%, 0.9);
+    font-size: 1.5em;
+    line-height: 80px;
+}
+
+/* Pen page */
+.pen__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: auto;
+}
+
+#pen > h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    border-bottom: 5px soild gray;
+    background-color: hsla(209, 54%, 11%, 0.6);
+    margin-top: 30px;
+    color: hsla(210, 40%, 90%, 1);
+    letter-spacing: 0.9px;
+}
+
+.pen__container >.pen__card > h4 {
+    color: hsl(210, 80%, 30%); 
+    font-size: 1.5em;
+    padding: 5px;
+
+}
+
+.pen__card > h6 {
+    color: hsl(210, 96%, 18%); 
+    font-size: 1em;
+    text-align: center;
+    background-color: hsla(210, 40%, 90%, 1);
+    border-radius: 5px;
+    font-family: sans-serif;
+    padding: 15px;
+    letter-spacing: 0.7px;
+}
+
+
+
+.pen__container > .pen__card  {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+    height: 410px;
+    width: 280px;
+    background-color: hsla(210, 60%, 60%, 0.4);
+    box-shadow: 2px 2px 3px hsla(210, 60%, 50%, 0.011);
+    border-radius: 20px;
+    margin: 15px 5px;
+}
+
+.pen__card > button {
+    width: 130px;
+    height: 40px;
+    background-color: hsla(211, 97%, 23%, 1);
+    color: hsla(210, 40%, 90%, 1);
+    outline-color: invert;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1.3em;
+    margin: 6px 0px;
+    letter-spacing: 2px;
+    border: none;
+}
+
+.pen__card > a > button:hover {
+    background-color: hsla(211, 97%, 23%, 0.9);
+}
+.pen__container > .pen__card > img {
+    width: 250px;
+    height: 220px;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+/* About Page */
+#about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsla(210, 20%, 50%, 0.2);
+    height: auto;
+    padding: 110px;
+    
+}
+.about__container {
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: hsla(210, 96%,48%, 0.6);
+    width: 70%;
+    height: 100vh;
+    border-radius: 20px;
+    
+    
+}
+
+.about__container > .about__header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+    height: 150px;
+    background-color: hsla(209, 54%, 11%, 0.3);
+    color: rgb(143, 190, 233);
+    text-shadow: 3px 3px 4px black;
+    letter-spacing: 2px;
+    border-radius: 15px;
+}
+
+@media screen and (max-width:630px) {
+    .about__container {
+        min-width: 85vw;
+    }
+    .about__header {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    
+}
+
+.about__container > .about__description {
+    padding: 30px 40px;
+}
+
+.about__container > .about__description > p {
+    text-align: justify;
+    color: rgb(248, 249, 250);
+    font-family: sans-serif;
+    line-height: 25px;
+    text-shadow: 2px 2px 3px black;
+}
+
+/* FOOTER */
+
+footer {
+    width: 100%;
+    height: 200px;
+    background-color: hsla(208, 55%, 6%, 0.8);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: hsla(210, 40%, 90%, 1);
+    margin: 20px 0px;
+    
+}
+
+@media screen and (max-width: 630px) {
+    footer {
+        display: flex;
+        flex-direction: column;
+        height: 350px;
+    }
+
+    footer > .footer__contact {
+        width: 100%;
+        background-color: hsla(210, 20%, 50%, 0.2);
+    }
+
+    footer > .footer__contact > p , span {
+        margin: auto auto;
+    }
+}
+
+footer > p, span, a, h5  {
+    font-size: 1.1em;
+    text-align: center;
+    font-family: sans-serif;
+    color: hsla(210, 40%, 90%, 1);
+} 
+
+ footer > .footer__contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    
+    
+}
+
+footer > .footer__contact > h5 {
+    text-align: center;
+    padding: 4px 0px;
+    
+}
+
+footer > .footer__contact > p {
+    text-align: left;
+    padding: 4px 0px;
+    
+}
+
+footer > .footer__sitemap {
+
+}
+
+footer > .footer__sitemap > ul {
+    
+}
+
+footer > .footer__sitemap > ul > h5 {
+    text-transform: uppercase;
+    padding: 5px 0px;
+}
+
+footer > .footer__sitemap > ul > li , a {
+    text-decoration: none;
+    list-style-type: none;
+    padding: 4px 0px;
+}
+
+footer > .footer__sitemap > ul > li , a:hover {
+   opacity: 0.9;
+}
