@@ -1,0 +1,22 @@
+Navigation bar:
+    1. Grid with 2 columns: auto 50%;
+    2. left column: logo - redirects to home page upon click.
+        Logo is designed at freelogodesign.org. 
+        If we click on logo, it redirects back to home.
+    3. background color: light blue
+    4. Text color: white
+    5. border at bottom of navigation bar is used with box shadow of 1px.
+    6. Each content have a container and used flexbox.
+    7. Navigation bar is fully responsive with all device size. 
+    8. Nav links change color if it is already visited.
+
+HomePage:
+    1. Fully responsive with flexbox design.
+    2. Flex changes direction of contents either stacks on each other or sets side by side.
+    3. Two photos are used on homepage. They are royalty free photos from unsplash.com.
+    4. "Write your dream" is the hook line to grab the attention of clients.
+    5. Hook text has 2px text shadow. It is a google font called "Kaushan Script". Fallback font is cursive.
+    
+
+Pen Page (Products):
+    1. Fully responsive product cards are used with product title, description and buy button.

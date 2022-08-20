@@ -239,12 +239,23 @@ nav > .logo {
     color: hsl(210, 80%, 30%); 
     font-size: 1.5em;
     padding: 5px;
-
+    
 }
 
+.card__header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    
+}
+
+.card__header > h5 {
+    color: hsla(208, 55%, 16%, 0.91);
+}
 .pen__card > h6 {
     color: hsl(210, 96%, 18%); 
-    font-size: 1em;
+    font-size: 0.8em;
     text-align: center;
     background-color: hsla(210, 40%, 90%, 0.35);
     border-radius: 5px;
@@ -277,7 +288,7 @@ nav > .logo {
     border-radius: 10px;
     cursor: pointer;
     font-size: 1.3em;
-    margin: 6px 0px;
+    margin: 9px 0px;
     letter-spacing: 2px;
     border: none;
 }
@@ -380,7 +391,7 @@ footer {
     }
 
     footer > .footer__contact > p , span {
-        margin: auto auto;
+        margin: auto auto;       
     }
 }
 
@@ -389,6 +400,7 @@ footer > p, span, a, h5  {
     text-align: center;
     font-family: sans-serif;
     color: hsla(210, 40%, 90%, 1);
+    
 } 
 
  footer > .footer__contact {
