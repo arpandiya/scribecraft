@@ -246,7 +246,7 @@ nav > .logo {
     color: hsl(210, 96%, 18%); 
     font-size: 1em;
     text-align: center;
-    background-color: hsla(210, 40%, 90%, 1);
+    background-color: hsla(210, 40%, 90%, 0.35);
     border-radius: 5px;
     font-family: sans-serif;
     padding: 15px;
