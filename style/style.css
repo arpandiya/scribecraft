@@ -20,7 +20,7 @@ nav {
     height: 150px;
     width: 100%;
     background-color: hsla(210, 60%, 50%, 0.011);
-    
+   
     
 }
 nav > .logo {
@@ -57,6 +57,7 @@ nav > .logo {
         position: absolute;
         top: 150px;
         left: 50%;
+        
     }
 
 
@@ -75,6 +76,10 @@ nav > .logo {
     nav > .bar > h1 {
         font-family: sans-serif;
         transform: rotate(90deg);
+    }
+
+    .nav__link {
+        margin: 5px 0px;
     }
 
 
@@ -364,6 +369,96 @@ nav > .logo {
     text-shadow: 2px 2px 3px black;
 }
 
+/* Contact page */
+#contact {    
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact__container {
+    width: 600px;
+    height: 800px ;
+    margin-top: 120px;
+    background-color: hsla(210, 40%, 90%, 0.35); 
+
+}
+
+.contact__container > h4 {
+    color: hsla(210, 20%, 20%, 1);
+    text-align: center;
+    padding: 15px 0px;
+}
+
+
+
+.contact__header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: hsla(210, 40%, 90%, 1);
+    background-color: hsla(208, 55%, 16%, 0.91);
+}
+
+.form__container {
+    background-color: hsla(209, 96%, 53%, 0.1);
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+
+.form__container > form > .form__input {
+    display: flex;    
+    align-items: center;
+    justify-content: space-evenly;
+    height: 80px;
+    width: 400px;
+    border-radius: 5px;
+    background-color: hsla(210, 20%, 50%, 0.031);
+    
+}
+.form__container > form > .form__input > label {
+    font-family: sans-serif;
+    width: 100px;
+    
+}
+.form__container > form > .form__input > input{
+    display: flex;
+    width: 300px;
+    height: 30px;
+    border: 1px solid hsla(208, 55%, 16%, 0.91);
+    border-radius: 5px;
+    
+}
+
+.form__container > form > .form__input > button {
+    font-family: sans-serif;
+    width: 150px;
+    height: 40px;
+    background-color: hsla(208, 55%, 16%, 0.91);
+    color: hsla(210, 40%, 90%, 1);
+    font-weight: bold;
+    font-size: 1.3em;
+    border-radius: 5px;    
+    cursor: pointer;
+}
+
+.form__container > form > .form__input > button:hover {
+    
+    background-color: hsla(208, 55%, 16%, 0.81);
+    color: hsla(210, 40%, 90%, 0.8);
+     
+}
+
+
+
+
+
 /* FOOTER */
 
 footer {
@@ -423,13 +518,6 @@ footer > .footer__contact > p {
     
 }
 
-footer > .footer__sitemap {
-
-}
-
-footer > .footer__sitemap > ul {
-    
-}
 
 footer > .footer__sitemap > ul > h5 {
     text-transform: uppercase;

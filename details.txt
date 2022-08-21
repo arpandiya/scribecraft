@@ -19,4 +19,25 @@ HomePage:
     
 
 Pen Page (Products):
-    1. Fully responsive product cards are used with product title, description and buy button.
+    1. Fully responsive product cards are used with product title,price, description and buy button.
+    2. When customer click on buy button, It will give a order confirmation message "Alert".
+    
+About Page:
+
+    1. A simple about page with a card box.
+    2. Card header has two parts, one is logo and another Text "ScribeCraft".
+    3. Card body is a brief description about the online store.
+    4. Card header contents stack eachother on smaller device and card body get expanded for better UI.
+
+
+    Summary:
+    1. Simple static website using html, css and javaScript.
+    2. Pen - Online store
+    3. It is deployed on Netlify and onRender.com
+        Netlify: scribecraft.netlify.app
+        Render: scribecraft.onrender.com
+    4. Deployment is done via GitHub. 
+    5. Liquid designing patterns are followed. Since all the elements flow in website.
+
+
+

@@ -1,40 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style/style.css">
-    <link rel="shortcut icon" href="/images/scribe_craft_logo.png" type="images/x-icon">
-    <title>ScribeCraft- Pen | we sell varities of pen</title>
-</head>
-<body>
-    <!-- Navigation bar -->
-    <nav>
-        <div class="logo">
-            <a href="/">
-                <img src="./images/scribe_craft_logo.png" width="150" height="120"/>
-            </a>
-        </div>
-
-        <div class="bar" onclick="navToggle()">
-            <h1>|||</h1>
-        </div>
-
-        <ul class="nav__links">           
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style/style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <link rel="shortcut icon" href="/images/scribe_craft_logo.png" type="images/x-icon">
+        <title>ScribeCraft - Home | we sell varities of pen</title>
+    </head>
+    <body>
+        <!-- Navigation bar -->
+        <nav>
+            <div class="logo">
                 <a href="/">
-                     <li class="nav__link">Home</li>
+                    <img src="./images/scribe_craft_logo.png" width="150" height="120"/>
                 </a>
-
-                <a href="/pen.html">
-                    <li class="nav__link">Pen</li>
-               </a>
-
-               <a href="/about.html">
-                <li class="nav__link">About</li>
-           </a>           
-        </ul>
-    </nav>
+            </div>
+    
+            <div class="bar" id="bars">
+                <h1>|||</h1>
+            </div>
+    
+            <ul class="nav__links" id="nav__links">           
+                    <a href="/">
+                         <li class="nav__link">Home</li>
+                    </a>
+    
+                    <a href="/product.html">
+                        <li class="nav__link">Product</li>
+                   </a>
+    
+                   <a href="/about.html">
+                    <li class="nav__link">About</li>
+               </a>  
+               <a href="/contact.html">
+                <li class="nav__link">Contact</li>
+           </a>         
+            </ul>
+        </nav>
 
     <!-- Pen Page -->
     <section id="pen">
@@ -177,8 +181,9 @@
                 <h5>sitemap</h5>
                 <hr>
                 <li><a href="/">Home</a></li>
-                <li><a href="/pen.html">Pen</a></li>
+                <li><a href="/product.html">Product</a></li>
                 <li><a href="/about.html">About Us</a></li>
+                <li><a href="/contact.html">Contact Us</a></li>
 
             </ul>
         </section>
