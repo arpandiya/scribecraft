@@ -9,9 +9,15 @@ $(document).ready(function() {
 })
 
 
+const login = () => {
+    alert("Login Successful !");
+}
 
+const contact = () => {
+    alert("Thanks for your message. We will get back to you soon.");
+}
 const buyNow = () => {
-    alert("Your ordered has been placed. It will be dispatched soon. Thank you !")
+    alert("Your ordered has been placed. It will be dispatched soon. Thank you !");
 }
 
 

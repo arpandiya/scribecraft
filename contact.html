@@ -7,7 +7,7 @@
         <link rel="stylesheet" href="style/style.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
         <link rel="shortcut icon" href="/images/scribe_craft_logo.png" type="images/x-icon">
-        <title>ScribeCraft - Home | we sell varities of pen</title>
+        <title>ScribeCraft - Contact | we sell varities of pen</title>
     </head>
     <body>
         <!-- Navigation bar -->
@@ -36,7 +36,11 @@
                </a>  
                <a href="/contact.html">
                 <li class="nav__link">Contact</li>
-           </a>         
+           </a>   
+           
+           <a href="/login.html">
+            <li class="nav__link">Login / Register</li>
+       </a> 
             </ul>
         </nav>
     <!-- Contact Page -->
@@ -62,10 +66,10 @@
 
                     <div class="form__input">
                         <label for="message">Message </label>
-                        <textarea type="text" name="message" cols="45" rows="4"></textarea>
+                        <textarea type="text" name="message" cols="30" rows="4"></textarea>
                     </div>
                     <div class="form__input">
-                        <button type="submit">Send</button>
+                        <button type="submit" onclick="contact()">Send</button>
                     </div>
                    
                     
@@ -93,6 +97,7 @@
                 <li><a href="/product.html">Product</a></li>
                 <li><a href="/about.html">About Us</a></li>
                 <li><a href="/contact.html">Contact Us</a></li>
+                <li><a href="/login.html">Login / Register</a></li>
 
             </ul>
         </section>
@@ -100,6 +105,9 @@
 
     </footer>
 
+
     <script src="javascript/app.js"></script>
+    
+
 </body>
 </html>
