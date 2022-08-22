@@ -61,7 +61,7 @@ nav > .logo {
     }
 
     nav > .logo > a> img {
-        width: 100%;
+        width: 100% !important;
         height: 90px;
     }
 
@@ -111,7 +111,7 @@ nav > .logo {
     }
 
     nav > .logo > a > img {
-        width: 10vw;
+        width: 12vw;
     }
 }
 
@@ -135,19 +135,19 @@ nav > .logo {
 
 
 /* login */
-a[href="/login.html"]> .nav__link {
+a[href="./login.html"]> .nav__link {
     margin-left: 10px;
     padding: 15px;
     width: 200px;
     background-color: hsl(210, 80%, 30%);
 }
 
-a[href="/login.html"] > .nav__link:hover {
+a[href="./login.html"] > .nav__link:hover {
     text-transform: capitalize !important;
 }
 
 @media screen and (max-width:630px) {
-    a[href="/login.html"]> .nav__link {
+    a[href="./login.html"]> .nav__link {
         margin-left: -20px;
         background-color: hsl(210, 80%, 30%);
     }
@@ -407,9 +407,9 @@ a[href="/login.html"] > .nav__link:hover {
 }
 
 .contact__container {
-    width: 100%;
+    width: 60%;
     height: 500px ;
-    margin-top: 120px;
+    margin-top: 90px;
     background-color: hsla(210, 40%, 90%, 0.35); 
    
 
@@ -442,6 +442,38 @@ a[href="/login.html"] > .nav__link:hover {
     width: 500px;
     margin: auto auto;
 
+}
+
+@media screen and (max-width: 630px) {
+    .contact__container {
+        width: 90vw;
+        height: 90vw;
+    }
+
+    .contact__header {
+        width: 80vw;
+        
+    }
+
+    .contact__container > form {
+        width: 80vw;
+        height: 100px;
+    }
+
+    .form__container {
+        width: 80vw;
+        height: 350px;
+        
+    }
+
+    .form__container > form > .form__input {
+        width: 80vw !important;
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+   
 }
 
 .form__container > form > .form__input {
@@ -508,7 +540,7 @@ footer {
     footer {
         display: flex;
         flex-direction: column;
-        height: 350px;
+        height: 450px;
     }
 
     footer > .footer__contact {
